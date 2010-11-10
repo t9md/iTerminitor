@@ -40,5 +40,5 @@ window :name => "tab1", :win_bounds => {:side => 500, :top => 0, :width => 500, 
     run "echo 'tab3'"
   end
 end
-  ```
+```
 
