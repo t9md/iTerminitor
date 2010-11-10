@@ -21,7 +21,7 @@ This is sample setting. This DSL is very very similar to [ terminitor ]( https:/
 Yes, I created this because terminitor didn't suppert `iTerm` which is terminal I daily use.
 
 ```ruby
-window :name => "tab1", :win_bounds => {:side => 0, :top => 0, :width => 500, :height => 500 } do
+  window :name => "tab1", :win_bounds => {:side => 0, :top => 0, :width => 500, :height => 500 } do
   tab :name => "tab2", :session => "Default Session" do
     run "echo 'tab2'"
   end
@@ -41,4 +41,3 @@ window :name => "tab1", :win_bounds => {:side => 500, :top => 0, :width => 500, 
   end
 end
 ```
-
