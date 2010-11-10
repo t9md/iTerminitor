@@ -36,13 +36,13 @@ Yes, I created this because `iTerm` was not supported by `terminitor`.
         run "echo 'tab2'"
       end
 
-      tab :name => "tab3", :session => "Default Session" do
+      tab :name => "tab3", :session => "Bookmarked Session 1" do
         run "echo 'tab3'"
       end
     end
 
     window :name => "tab1", :win_bounds => {:side => 500, :top => 0, :width => 500, :height => 500 } do
-      tab :name => "tab2", :session => "Default Session" do
+      tab :name => "tab2", :session => "Bookmarked Session2" do
         run "echo 'tab2'"
       end
 
