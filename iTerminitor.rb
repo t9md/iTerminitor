@@ -54,15 +54,18 @@ EOS
 
   def initialize
     @term = app('iTerm')
-    @shell = ENV['SHELL']
+    # @shell = ENV['SHELL']
   end
 
   def window(opt = {}, &blk)
     app('System Events').application_processes['iTerm.app'].keystroke('n', :using => :command_down)
 
     if opt[:win_bounds]
-      puts "hogehoge"
       window_bounds(opt[:win_bounds])
+    end
+
+    if opt[:name]
+      @term.current_terminal.current_session.name.set(opt[:name])
     end
     self.instance_eval(&blk)
   end
