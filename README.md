@@ -17,8 +17,8 @@ This script is for `iTerm` and have very limited feature compared to terminitor.
 
 ## sample.rb
 
-This is sample setting. This DSL is very very similar to [ terminitor ]( https://github.com/achiu/terminitor ).
-Yes, I created this because terminitor didn't suppert `iTerm` which is terminal I daily use.
+This is sample setting. This DSL is very very similar to [ terminitor ]( https://github.com/achiu/terminitor ). 
+Yes, I created this because `iTerm` is not supported by `terminitor`.
 
     window :name => "tab1", :win_bounds => {:side => 0, :top => 0, :width => 500, :height => 500 } do
       tab :name => "tab2", :session => "Default Session" do
